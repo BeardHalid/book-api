@@ -1,8 +1,9 @@
-import {create, router, defaults} from 'json-server'
+import pkg from 'json-server'
+const {create, router, defaults} = pkg;
 
-const server = create();
-const myRouter = router('db.json')
-const middleWares = defaults();
+const server = pkg.create();
+const myRouter = pkg.router('db.json')
+const middleWares = pkg.defaults();
 const port = process.env.PORT || 3000;
 
 server.use(middleWares);
