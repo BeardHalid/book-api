@@ -1,12 +1,10 @@
-import pkg from 'json-server'
-const {create, router, defaults} = pkg;
-
-const server = pkg.create();
-const myRouter = pkg.router('db.json')
-const middleWares = pkg.defaults();
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middleWares = jsonServer.defaults();
 const port = process.env.PORT || 3000;
 
 server.use(middleWares);
-server.use(myRouter);
+server.use(router);
 
 server.listen(port);
