@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/BeardHalid/book-api#readme",
   "dependencies": {
+    "heroku": "^7.62.0",
     "json-server": "^0.17.0"
   }
 }
