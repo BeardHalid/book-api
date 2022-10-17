@@ -1,7 +1,6 @@
 {
     "books": [
         {
-            "id": 0,
             "name": "Sefiller",
             "image": "",
             "category": "Dram"
